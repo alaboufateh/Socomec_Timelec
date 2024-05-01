@@ -15,11 +15,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="flex">
-          <div className="basis-[5%]">
+        <div className="flex mt-5">
+          <div className="basis-[7%]">
             <SlideBar />
           </div>
-          <div> {children}</div>
+          {children}
+
         </div>
       </body>
     </html>

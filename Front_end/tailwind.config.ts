@@ -8,22 +8,20 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {},
       width: {
         defaultwidth: "90%",
       },
-
       maxWidth: {
         mwidth1: "1600px",
       },
-      maxHeight: {},
+     
       colors: {
         blue: "#4264D0",
         ghostWhite: "#F5F5F7",
         lightBlue: "#ECEFFA",
         lightPurple: "#E9EBFF",
       },
-      flexBasis: {},
+      
     },
   },
   plugins: [],
