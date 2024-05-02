@@ -14,8 +14,8 @@ function CardProfile(props: {
   return (
     <div className="w-defaultwidth m-auto bg-white rounded-xl">
       <div className="bg-blue rounded-xl text-white p-3 py-4">My profile</div>
-      <div className="flex w-full place-items-center py-4">
-        <div className="basis-2/6 flex ">
+      <div className="xl:flex w-full  py-4">
+        <div className="xl:basis-2/6 flex ">
           <div className="m-auto">
             {props.data.img !== undefined && props.data.img !== "" ? (
               <img
@@ -33,8 +33,8 @@ function CardProfile(props: {
             )}
           </div>
         </div>
-        <div className="basis-4/6 flex">
-          <div className="me-auto">
+        <div className="xl:basis-4/6 flex xl:ps-0 ps-4">
+          <div className="me-auto ">
             <div className="font-bold text-2xl">{props.data?.name}</div>
             <div className="text-gray-500">{props.data?.job}</div>
             <div className="flex">
@@ -44,23 +44,23 @@ function CardProfile(props: {
           </div>
         </div>
       </div>
-      <div className="flex py-3">
+      <div className="lg:flex py-3">
         <div className="basis-1/3 flex">
-          <div className="m-auto">
+          <div className="lg:m-auto lg:ps-0 ps-4">
             <div className="text-gray-500">gg</div>
             <div>{props.data?.birth}</div>
           </div>
         </div>
-        <hr className="border-[1px] border-lightPurple h-10" />
+        <hr className="border-[1px] border-lightPurple h-10 lg:block hidden" />
         <div className="basis-1/3 flex">
-          <div className="m-auto">
+          <div className="lg:m-auto lg:ps-0 ps-4">
             <div className="text-gray-500">rrr</div>
             <div>{props.data?.birth}</div>
           </div>
         </div>
-        <hr className="border-[1px] border-lightPurple h-10" />
+        <hr className="border-[1px] border-lightPurple h-10 lg:block hidden" />
         <div className="basis-1/3 flex ">
-          <div className="m-auto">
+          <div className="lg:m-auto lg:ps-0 ps-4">
             <div className="text-gray-500">eee</div>
             <div>{props.data?.birth}</div>
           </div>

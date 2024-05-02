@@ -20,7 +20,6 @@ export default function RootLayout({
             <SlideBar />
           </div>
           {children}
-
         </div>
       </body>
     </html>
