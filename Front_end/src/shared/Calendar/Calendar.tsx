@@ -47,11 +47,10 @@ function Calendar() {
       <div className="bg-lightPurple p-3 rounded-b-xl lg:flex  hidden ">
         {daysOfWeek.map((item, index) => (
           <div
-            className={`m-auto text-center ${
-              item === dayOfWeek
+            className={`m-auto text-center ${item === dayOfWeek
                 ? "bg-jordyBlue text-white p-2  rounded-lg"
                 : "xl:text-lg lg:text-md text-sm"
-            }`}
+              }`}
             key={index}
           >
             <div> {item}</div>
@@ -59,13 +58,12 @@ function Calendar() {
           </div>
         ))}
       </div>
-      <div className="bg-white p-3 rounded-b-xl  overflow-y-auto max-h-[350px] ">
+      <div className="bg-white p-3 rounded-b-xl  overflow-y-auto max-h-[300px] ">
         {taskCompleted.map((item, index) => (
           <div key={index}>
             <hr
-              className={`border-[1px] border-lightPurple w-full  my-1 border-dashed ${
-                index === 0 ? "hidden" : "block"
-              }`}
+              className={`border-[1px] border-lightPurple w-full  my-1 border-dashed ${index === 0 ? "hidden" : "block"
+                }`}
             />
             <div className="lg:flex">
               <span className="text-gray-500 my-auto 2xl:basis-1/6 basis-2/6">

@@ -20,10 +20,10 @@ function SlideBar() {
         <div className="m-auto text-white text-center ">Timelec</div>
         <div>
           {icons.map((item, index) => (
-            <a href={item.path} key={index}>
+            <a href={item.path} key={index} className="">
               <FontAwesomeIcon
                 icon={item.title}
-                className="md:h-8 h-6 m-auto text-white my-8"
+                className={`md:h-10 h-11 m-auto  my-8  p-2 rounded-lg  text-white ${index === 1 ? "bg-jordyBlue " : ""}`}
               />
             </a>
           ))}
