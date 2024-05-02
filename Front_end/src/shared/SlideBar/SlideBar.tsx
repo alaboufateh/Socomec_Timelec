@@ -17,13 +17,13 @@ function SlideBar() {
   return (
     <div className="w-defaultwidth m-auto py-1 sticky  top-0">
       <div className="bg-blue  h-[90vh]  m-auto rounded-xl  py-10 grid ">
-        <div className="m-auto">LOGO</div>
+        <div className="m-auto text-white text-center ">Timelec</div>
         <div>
           {icons.map((item, index) => (
             <a href={item.path} key={index}>
               <FontAwesomeIcon
                 icon={item.title}
-                className="h-8 m-auto text-white my-8"
+                className="md:h-8 h-6 m-auto text-white my-8"
               />
             </a>
           ))}
