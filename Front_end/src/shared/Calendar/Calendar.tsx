@@ -9,7 +9,9 @@ function Calendar() {
   const currentDate = new Date();
   const dayOfWeek = daysOfWeek[currentDate.getDay()];
   const month = currentDate.toLocaleString("en-US", { month: "long" });
-  const day = currentDate.toLocaleString("en-US", { day: "numeric" });
+  const day = currentDate
+    .toLocaleString("en-US", { day: "numeric" })
+    .padStart(2, "0");
   const taskCompleted = [
     { task: "task one ", time: "10:00 pm" },
     { task: "task two", time: "10:30 pm" },
@@ -53,7 +55,7 @@ function Calendar() {
           </div>
         ))}
       </div>
-      <div className="bg-white p-3 rounded-b-xl  ">
+      <div className="bg-white p-3 rounded-b-xl  overflow-y-auto max-h-[350px]">
         {taskCompleted.map((item, index) => (
           <div key={index}>
             <hr
@@ -62,7 +64,7 @@ function Calendar() {
               }`}
             />
             <div>
-              {item?.time}
+              <span className="text-gray-500">{item?.time}</span>
               <span className="px-1 text-4xl font-bold text-blue">.</span>
               {item?.task}
             </div>
