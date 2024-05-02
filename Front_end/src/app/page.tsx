@@ -1,3 +1,4 @@
+import Calendar from "@/shared/Calendar/Calendar";
 import CardProfile from "@/shared/CardProfile/CardProfile";
 import Navbar from "@/shared/Navbar/Navbar";
 function page() {
@@ -15,6 +16,7 @@ function page() {
       </div>
       <div className="basis-1/3 ">
         <CardProfile data={profile} />
+        <Calendar />
       </div>
     </div>
   );
