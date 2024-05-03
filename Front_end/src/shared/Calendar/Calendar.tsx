@@ -2,8 +2,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarDays } from "@fortawesome/free-solid-svg-icons";
 import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
 
-import React from "react";
-
 function Calendar() {
   const date = new Date().toLocaleDateString();
   const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -33,7 +31,6 @@ function Calendar() {
             <div className="pe-2 hidden lg:block "> {month}</div>
             <div className="text-sm pe-2 lg:hidden block ">
               <span className="text-center">
-                {" "}
                 {month} {day}
               </span>
             </div>
