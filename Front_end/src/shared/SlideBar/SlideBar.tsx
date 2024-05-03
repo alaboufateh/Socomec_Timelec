@@ -17,7 +17,9 @@ function SlideBar() {
   return (
     <div className="w-defaultwidth m-auto py-1 sticky  top-0">
       <div className="bg-blue  h-[90vh]  m-auto rounded-xl  py-10 grid ">
-        <div className="m-auto text-white text-center ">Timelec</div>
+        <div className="  ">
+          <img src="./assets/logoWhite.png" className="w-[80%] m-auto" />
+        </div>
         <div>
           {icons.map((item, index) => (
             <a href={item.path} key={index} className="">
