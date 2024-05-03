@@ -13,7 +13,7 @@ export default function CardBlue() {
       <div className="basis-2/3 m-4">
         <div className="flex w-fit bg-jordyBlue rounded-lg p-2 px-4 text-white">
           <FontAwesomeIcon icon={faSun} className="md:h-6 h-4 my-auto pe-2 " />
-          {day} {month} {year}
+          {month} {day}, {year}
         </div>
       </div>
       <div className="flex basis-1/3 ">
