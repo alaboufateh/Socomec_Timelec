@@ -13,7 +13,7 @@ function CardProfile(props: {
   };
 }) {
   return (
-    <div className="w-defaultwidth m-auto bg-white rounded-xl">
+    <div className="w-defaultwidth2 m-auto bg-white rounded-xl">
       <div className="bg-blue rounded-xl text-white p-3 py-4 flex">
         <div className="basis-1/2"> My profile</div>
         <a href="/profile" className="basis-1/2 flex">

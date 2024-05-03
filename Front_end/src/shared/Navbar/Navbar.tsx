@@ -5,7 +5,7 @@ import { faGear } from "@fortawesome/free-solid-svg-icons";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 function Navbar() {
   return (
-    <div className="flex w-defaultwidth m-auto pb-4">
+    <div className="flex w-defaultwidth2 m-auto pb-4">
       <div className="basis-2/3">
         <div className="flex  bg-white rounded-xl  ">
           <input

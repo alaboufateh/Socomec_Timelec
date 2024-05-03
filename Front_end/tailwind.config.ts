@@ -10,6 +10,7 @@ module.exports = {
     extend: {
       width: {
         defaultwidth: "90%",
+        defaultwidth2: "95%",
       },
       maxWidth: {
         mwidth1: "1600px",

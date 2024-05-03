@@ -3,7 +3,6 @@ import { faCalendarDays } from "@fortawesome/free-solid-svg-icons";
 import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
 
 function Calendar() {
-  const date = new Date().toLocaleDateString();
   const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   const currentDate = new Date();
   const dayOfWeek = daysOfWeek[currentDate.getDay()];
@@ -23,7 +22,7 @@ function Calendar() {
     { task: "task two", time: "10:30 pm" },
   ];
   return (
-    <div className="w-defaultwidth m-auto rounded-xl bg-gradient-to-t from-white to-lightPurple  mt-10">
+    <div className="w-defaultwidth2 m-auto rounded-xl bg-gradient-to-t from-white to-lightPurple  mt-10">
       <div className="bg-blue rounded-xl text-white p-3 py-4 flex">
         <div className="basis-1/2 m-auto"> My Calendar</div>
         <a href="/" className="basis-1/2 flex ">
@@ -44,10 +43,11 @@ function Calendar() {
       <div className="bg-lightPurple p-3 rounded-b-xl lg:flex  hidden ">
         {daysOfWeek.map((item, index) => (
           <div
-            className={`m-auto text-center ${item === dayOfWeek
+            className={`m-auto text-center ${
+              item === dayOfWeek
                 ? "bg-jordyBlue text-white p-2  rounded-lg"
                 : "xl:text-lg lg:text-md text-sm"
-              }`}
+            }`}
             key={index}
           >
             <div> {item}</div>
@@ -59,8 +59,9 @@ function Calendar() {
         {taskCompleted.map((item, index) => (
           <div key={index}>
             <hr
-              className={`border-[1px] border-lightPurple w-full  my-1 border-dashed ${index === 0 ? "hidden" : "block"
-                }`}
+              className={`border-[1px] border-lightPurple w-full  my-1 border-dashed ${
+                index === 0 ? "hidden" : "block"
+              }`}
             />
             <div className="lg:flex">
               <span className="text-gray-500 my-auto 2xl:basis-1/6 basis-2/6">

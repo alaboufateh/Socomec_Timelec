@@ -23,7 +23,9 @@ function SlideBar() {
             <a href={item.path} key={index} className="">
               <FontAwesomeIcon
                 icon={item.title}
-                className={`md:h-10 h-11 m-auto  my-8  p-2 rounded-lg  text-white ${index === 1 ? "bg-jordyBlue " : ""}`}
+                className={`md:h-10 h-11 m-auto  my-8  p-2 rounded-lg  text-white ${
+                  index === 1 ? "bg-jordyBlue " : ""
+                }`}
               />
             </a>
           ))}
