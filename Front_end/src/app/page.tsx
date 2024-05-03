@@ -11,10 +11,10 @@ function page() {
   };
   return (
     <div className="w-defaultwidth mx-auto md:flex  ">
-      <div className="basis-2/3">
+      <div className="basis-3/5">
         <Navbar />
       </div>
-      <div className="basis-1/3 ">
+      <div className="basis-2/5 ">
         <CardProfile data={profile} />
         <Calendar />
       </div>
