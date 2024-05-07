@@ -11,20 +11,20 @@ function CardMachine() {
     { name: "Bel" },
   ];
   return (
-    <div className="w-defaultwidth2 m-auto flex justify-evenly flex-wrap  ">
+    <div className=" m-auto flex  flex-wrap w-full justify-center">
       {cards.map((item, index) => (
         <div
           key={index}
-          className="rounded-xl  lg:p-4 border-jordyBlue  bg-white basis-1/4 m-5 "
+          className="rounded-xl  lg:w-full  w-defaultwidth2  p-4 border-jordyBlue bg-white xl:basis-1/4 lg:basis-1/3  xl:my-5 my-2 2xl:mx-5b lg:mx-3 mx-1"
         >
           <div className="flex pb-5">
             <p className="font-bold text-blue">{item?.name}</p>
-            <button className="ms-auto bg-lightPurple p-1 px-2 rounded-lg text-blue flex">
+            <button className="ms-auto bg-lightPurple p-1 px-2 rounded-lg  text-blue flex h-fit">
               Consulter
             </button>
           </div>
 
-          <div className="flex">
+          <div className="flex w-full">
             <img className="m-auto " src={`./assets/machine${index + 1}.png`} />
           </div>
         </div>
