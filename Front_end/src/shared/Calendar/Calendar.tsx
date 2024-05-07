@@ -22,7 +22,7 @@ function Calendar() {
     { task: "task two", time: "10:30 pm" },
   ];
   return (
-    <div className="w-defaultwidth2 m-auto rounded-xl bg-gradient-to-t from-white to-lightPurple  mt-10">
+    <div className="w-defaultwidth2  m-auto rounded-xl bg-gradient-to-t from-white to-lightPurple  mt-10">
       <div className="bg-blue rounded-xl text-white p-3 py-4 flex">
         <div className="basis-1/2 m-auto"> My Calendar</div>
         <a href="/" className="basis-1/2 flex ">
