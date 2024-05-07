@@ -26,9 +26,9 @@ export default function CardBlue() {
           <FontAwesomeIcon icon={faSun} className="md:h-6 h-4 my-auto pe-2 " />
           {month} {day}, {year}
         </div>
-        <div className="text-white h-full flex text-3xl font-bold">
+        {/* <div className="text-white h-full flex text-3xl font-bold">
           <p className="my-auto">Have a Nice {dayOfWeek} !</p>
-        </div>
+        </div> */}
       </div>
       <div className="flex basis-1/3 ">
         <div className="bg-white rounded-xl ms-auto m-4">
