@@ -11,7 +11,7 @@ function CardMachine() {
     { name: "Bel" },
   ];
   return (
-    <div className=" m-auto flex  flex-wrap w-full justify-center">
+    <div className=" m-auto flex  flex-wrap w-full justify-center overflow-y-auto max-h-[600px] my-5">
       {cards.map((item, index) => (
         <div
           key={index}

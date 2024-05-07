@@ -1,8 +1,15 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-
-body{
-    background-color: #F5F5F7;
+body {
+  background-color: #f5f5f7;
+}
+::-webkit-scrollbar {
+  background-color: #eceffa;
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #718bdc;
+  border-radius: 50px;
 }
