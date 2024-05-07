@@ -1,5 +1,6 @@
 import Calendar from "@/shared/Calendar/Calendar";
 import CardBlue from "@/shared/CardBlue/CardBlue";
+import CardMachine from "@/shared/CardMachine/CardMachine";
 import CardProfile from "@/shared/CardProfile/CardProfile";
 import Navbar from "@/shared/Navbar/Navbar";
 function page() {
@@ -15,6 +16,7 @@ function page() {
       <div className="basis-3/5">
         <Navbar />
         <CardBlue />
+        <CardMachine />
       </div>
       <div className="basis-2/5 ">
         <CardProfile data={profile} />
