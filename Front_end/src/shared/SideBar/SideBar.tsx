@@ -16,7 +16,7 @@ function SlideBar() {
   const icons = [
     { title: faHouse, path: "/" },
     { title: faUser, path: "/profile" },
-    { title: faList, path: "/" },
+    { title: faList, path: "/users" },
     { title: faToolbox, path: "/materials" },
     { title: faGear, path: "/" },
   ];
