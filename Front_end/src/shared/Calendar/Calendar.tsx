@@ -34,6 +34,7 @@ function Calendar() {
               </span>
             </div>
             <FontAwesomeIcon
+              style={{ boxSizing: "initial" }}
               icon={faCalendarDays}
               className="md:h-6 h-4 my-auto"
             />
@@ -69,6 +70,7 @@ function Calendar() {
               </span>
               <div className="2xl:basis-5/6 basis-4/6 flex">
                 <FontAwesomeIcon
+                  style={{ boxSizing: "initial" }}
                   icon={faCaretRight}
                   className="md:h-4 h-2 xl:basis-[10%] lg:basis-[20%]  my-auto text-blue lg:px-2 pe-1"
                 />

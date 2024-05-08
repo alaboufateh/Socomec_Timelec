@@ -23,7 +23,11 @@ export default function CardBlue() {
     <div className="bg-blue w-defaultwidth2 m-auto rounded-xl flex my-5 ">
       <div className="basis-2/3 m-4">
         <div className="flex w-fit bg-jordyBlue rounded-lg p-2 px-4 text-white">
-          <FontAwesomeIcon icon={faSun} className="md:h-6 h-4 my-auto pe-2 " />
+          <FontAwesomeIcon
+            style={{ boxSizing: "initial" }}
+            icon={faSun}
+            className="md:h-6 h-4 my-auto pe-2 "
+          />
           {month} {day}, {year}
         </div>
         {/* <div className="text-white h-full flex text-3xl font-bold">

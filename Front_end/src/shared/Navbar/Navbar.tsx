@@ -15,6 +15,7 @@ function Navbar() {
           />
           <button type="submit" className="rounded-xl px-2 flex">
             <FontAwesomeIcon
+              style={{ boxSizing: "initial" }}
               icon={faMagnifyingGlass}
               className="md:h-8 h-6 p-1 m-auto text-blue"
             />
@@ -25,6 +26,7 @@ function Navbar() {
         <div className="ms-auto flex ">
           <div className="bg-white p-2 rounded-xl mx-1 flex">
             <FontAwesomeIcon
+              style={{ boxSizing: "initial" }}
               icon={faBell}
               className="md:h-8 h-6 p-1 text-blue m-auto"
             />
@@ -32,6 +34,7 @@ function Navbar() {
 
           <div className="bg-white p-2 rounded-xl mx-1 flex">
             <FontAwesomeIcon
+              style={{ boxSizing: "initial" }}
               icon={faGear}
               className="md:h-8 h-6 p-1 text-blue m-auto"
             />

@@ -20,6 +20,7 @@ function CardProfile(props: {
         </a>
         <div className="basis-1/2 flex">
           <FontAwesomeIcon
+            style={{ boxSizing: "initial" }}
             icon={faPenToSquare}
             className="md:h-6 h-4 ms-auto "
           />
@@ -38,6 +39,7 @@ function CardProfile(props: {
             ) : (
               <div className="w-24  bg-lightBlue rounded-full ">
                 <FontAwesomeIcon
+                  style={{ boxSizing: "initial" }}
                   className="w-20 p-4 m-auto text-blue"
                   icon={faUser}
                 />
@@ -50,7 +52,11 @@ function CardProfile(props: {
             <div className="font-bold text-2xl ">{props.data?.name}</div>
             <div className="text-gray-500  ">{props.data?.job}</div>
             <div className="lg:flex  hidden">
-              <FontAwesomeIcon icon={faLocationDot} className="w-4 text-blue" />
+              <FontAwesomeIcon
+                style={{ boxSizing: "initial" }}
+                icon={faLocationDot}
+                className="w-4 text-blue"
+              />
               <div className="ps-2">{props.data?.address}</div>
             </div>
           </div>
