@@ -8,9 +8,11 @@ function page() {
     address: "string string string string",
     birth: "string",
   };
-  return <div className="w-full">
-    <div></div>
-  </div>;
+  return (
+    <div className="w-defaultwidth mx-auto md:flex  ">
+      <div></div>
+    </div>
+  );
 }
 
 export default page;

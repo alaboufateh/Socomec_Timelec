@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.scss";
-import SlideBar from "@/shared/SlideBar/SlideBar";
+import SideBar from "@/shared/SideBar/SideBar";
 
 export const metadata: Metadata = {
   title: "Socomec_Timelec",
@@ -17,7 +17,7 @@ export default function RootLayout({
       <body>
         <div className="lg:flex mt-5">
           <div className="xl:basis-[7%] lg:basis-[10%] basis-[15%] hidden lg:block">
-            <SlideBar />
+            <SideBar />
           </div>
           {children}
         </div>
