@@ -17,7 +17,7 @@ function SlideBar() {
     { title: faHouse, path: "/" },
     { title: faUser, path: "/profile" },
     { title: faList, path: "/" },
-    { title: faToolbox, path: "/" },
+    { title: faToolbox, path: "/materials" },
     { title: faGear, path: "/" },
   ];
   const initialArray = Array(icons.length).fill(false);
@@ -43,7 +43,7 @@ function SlideBar() {
                 }}
               >
                 <FontAwesomeIcon
-                  className={`md:h-8 h-9  p-2 rounded-lg my-4  text-white ${
+                  className={`md:h-6 h-8  p-2 rounded-lg my-4  text-white ${
                     hover[index] && "bg-jordyBlue"
                   } `}
                   style={{ boxSizing: "initial" }}

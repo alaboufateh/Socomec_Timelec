@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.scss";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import SideBar from "@/shared/SideBar/SideBar";
 
 export const metadata: Metadata = {

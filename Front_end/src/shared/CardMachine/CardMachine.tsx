@@ -1,5 +1,6 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLink } from "@fortawesome/free-solid-svg-icons";
+"use client";
+
+import Link from "next/link";
 
 function CardMachine() {
   const cards = [
@@ -19,9 +20,12 @@ function CardMachine() {
         >
           <div className="flex pb-5">
             <p className="font-bold text-blue">{item?.name}</p>
-            <button className="ms-auto bg-lightPurple p-1 px-2 rounded-lg  text-blue flex h-fit">
+            <Link
+              href={"/materials"}
+              className="ms-auto bg-lightPurple text-blue  hover:text-white hover:bg-blue p-1 px-2 rounded-lg   flex h-fit"
+            >
               Consulter
-            </button>
+            </Link>
           </div>
 
           <div className="flex w-full">
