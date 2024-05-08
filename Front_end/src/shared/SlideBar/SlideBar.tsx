@@ -1,3 +1,4 @@
+"use client";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
@@ -22,22 +23,26 @@ function SlideBar() {
         </div>
         <div>
           {icons.map((item, index) => (
-            <a href={item.path} key={index} className="">
-              <FontAwesomeIcon
-                icon={item.title}
-                className={`md:h-10 h-11 m-auto  my-8  p-2 rounded-lg  text-white ${
-                  index === 1 ? "bg-jordyBlue " : ""
-                }`}
-              />
-            </a>
+            <div key={index} className="flex">
+              <a href={item.path} className="m-auto">
+                <FontAwesomeIcon
+                  icon={item.title}
+                  className={`md:h-8 h-9  p-2 rounded-lg my-4  text-white ${
+                    index === 1 ? "bg-jordyBlue " : ""
+                  }`}
+                />
+              </a>
+            </div>
           ))}
         </div>
-        <a href="" className="mb-auto">
-          <FontAwesomeIcon
-            icon={faRightToBracket}
-            className="h-8 m-auto text-white "
-          />
-        </a>
+        <div className="mb-auto flex">
+          <a href="" className="mx-auto">
+            <FontAwesomeIcon
+              icon={faRightToBracket}
+              className="h-8 m-auto text-white "
+            />
+          </a>
+        </div>
       </div>
     </div>
   );
