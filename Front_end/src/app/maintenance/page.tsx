@@ -1,4 +1,5 @@
 import CardBlue from "@/shared/CardBlue/CardBlue";
+import ListMaintenance from "@/shared/ListMaintenance/ListMaintenance";
 import Maintenance from "@/shared/Maintenance/Maintenance";
 import Navbar from "@/shared/Navbar/Navbar";
 import React from "react";
@@ -11,7 +12,9 @@ function page() {
         <CardBlue />
         <Maintenance />
       </div>
-      <div className="basis-2/5 "></div>
+      <div className="basis-2/5 ">
+        <ListMaintenance />
+      </div>
     </div>
   );
 }

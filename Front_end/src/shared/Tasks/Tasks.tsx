@@ -1,6 +1,4 @@
 "use client";
-import { faUserPlus } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 function Tasks(props: {
@@ -14,7 +12,7 @@ function Tasks(props: {
   return (
     <div className="w-defaultwidth2 my-5 m-auto rounded-xl bg-gradient-to-t from-white to-lightPurple  mt-10">
       <div className="bg-blue rounded-xl text-white p-3 py-4 flex">
-        <div className="basis-1/2 m-auto">List of users</div>
+        <div className="basis-1/2 m-auto">Today's Tasks</div>
         <div className="basis-1/2 flex ">
           <button
             className="bg-jordyBlue  font-bold  p-2 px-4 rounded-lg ms-auto"

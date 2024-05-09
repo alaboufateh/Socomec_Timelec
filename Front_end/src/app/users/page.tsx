@@ -21,36 +21,7 @@ function page() {
       fullname: "fullname fullname",
       task: "task task task task task task task task task",
     },
-    {
-      machine: "machine name",
-      reference: "reference xxx",
-      fullname: "fullname fullname",
-      task: "task task task task task task task task task",
-    },
-    {
-      machine: "machine name",
-      reference: "reference xxx",
-      fullname: "fullname fullname",
-      task: "task task task task task task task task task",
-    },
-    {
-      machine: "machine name",
-      reference: "reference xxx",
-      fullname: "fullname fullname",
-      task: "task task task task task task task task task",
-    },
-    {
-      machine: "machine name",
-      reference: "reference xxx",
-      fullname: "fullname fullname",
-      task: "task task task task task task task task task",
-    },
-    {
-      machine: "machine name",
-      reference: "reference xxx",
-      fullname: "fullname fullname",
-      task: "task task task task task task task task task",
-    },
+
     {
       machine: "machine name",
       reference: "reference xxx",
