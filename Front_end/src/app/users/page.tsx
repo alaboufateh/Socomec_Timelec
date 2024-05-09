@@ -2,6 +2,7 @@ import CardBlue from "@/shared/CardBlue/CardBlue";
 import CardProfile from "@/shared/CardProfile/CardProfile";
 import Maintenance from "@/shared/Maintenance/Maintenance";
 import Navbar from "@/shared/Navbar/Navbar";
+import Tasks from "@/shared/Tasks/Tasks";
 import UsersList from "@/shared/UsersList/UsersList";
 import React from "react";
 
@@ -13,6 +14,92 @@ function page() {
     address: "string string string string",
     birth: "string",
   };
+  const tasks = [
+    {
+      machine: "machine name",
+      reference: "reference xxx",
+      fullname: "fullname fullname",
+      task: "task task task task task task task task task ",
+    },
+    {
+      machine: "machine name",
+      reference: "reference xxx",
+      fullname: "fullname fullname",
+      task: "task task task task task task task task task",
+    },
+    {
+      machine: "machine name",
+      reference: "reference xxx",
+      fullname: "fullname fullname",
+      task: "task task task task task task task task task",
+    },
+    {
+      machine: "machine name",
+      reference: "reference xxx",
+      fullname: "fullname fullname",
+      task: "task task task task task task task task task",
+    },
+    {
+      machine: "machine name",
+      reference: "reference xxx",
+      fullname: "fullname fullname",
+      task: "task task task task task task task task task",
+    },
+    {
+      machine: "machine name",
+      reference: "reference xxx",
+      fullname: "fullname fullname",
+      task: "task task task task task task task task task",
+    },
+    {
+      machine: "machine name",
+      reference: "reference xxx",
+      fullname: "fullname fullname",
+      task: "task task task task task task task task task",
+    },
+    {
+      machine: "machine name",
+      reference: "reference xxx",
+      fullname: "fullname fullname",
+      task: "task task task task task task task task task",
+    },
+    {
+      machine: "machine name",
+      reference: "reference xxx",
+      fullname: "fullname fullname",
+      task: "task task task task task task task task task",
+    },
+    {
+      machine: "machine name",
+      reference: "reference xxx",
+      fullname: "fullname fullname",
+      task: "task task task task task task task task task",
+    },
+    {
+      machine: "machine name",
+      reference: "reference xxx",
+      fullname: "fullname fullname",
+      task: "task task task task task task task task task",
+    },
+    {
+      machine: "machine name",
+      reference: "reference xxx",
+      fullname: "fullname fullname",
+      task: "task task task task task task task task task",
+    },
+    {
+      machine: "machine name",
+      reference: "reference xxx",
+      fullname: "fullname fullname",
+      task: "task task task task task task task task task",
+    },
+    {
+      machine: "machine name",
+      reference: "reference xxx",
+      fullname: "fullname fullname",
+      task: "task task task task task task task task task",
+    },
+  ];
   const users = [
     {
       email: "email.test@gmail.com",
@@ -56,6 +143,7 @@ function page() {
       <div className="basis-3/5 ">
         <Navbar />
         <CardBlue />
+        <Tasks Tasks={tasks} />
       </div>
       <div className="basis-2/5 ">
         <CardProfile data={profile} />

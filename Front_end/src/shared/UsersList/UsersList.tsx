@@ -24,7 +24,7 @@ function UsersList(props: {
         </div>
       </div>
 
-      <div className=" overflow-x-auto overflow-y-auto max-h-[400px]">
+      <div className=" overflow-x-auto overflow-y-auto max-h-[340px]">
         <table className="w-full text-left  text-gray-500 dark:text-gray-400">
           <thead>
             <tr className="">

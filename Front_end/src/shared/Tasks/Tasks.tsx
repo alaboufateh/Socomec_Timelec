@@ -1,12 +1,18 @@
+"use client";
 import { faUserPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 function Tasks(props: {
-  users: { email: string; number: string; fullname: string; img: string }[];
+  Tasks: {
+    machine: string;
+    reference: string;
+    fullname: string;
+    task: string;
+  }[];
 }) {
   return (
-    <div className="w-defaultwidth2  m-auto rounded-xl bg-gradient-to-t from-white to-lightPurple  mt-10">
+    <div className="w-defaultwidth2 my-5 m-auto rounded-xl bg-gradient-to-t from-white to-lightPurple  mt-10">
       <div className="bg-blue rounded-xl text-white p-3 py-4 flex">
         <div className="basis-1/2 m-auto">List of users</div>
         <div className="basis-1/2 flex ">
@@ -24,42 +30,39 @@ function Tasks(props: {
         </div>
       </div>
 
-      <div className=" overflow-x-auto overflow-y-auto max-h-[400px]">
+      <div className="rounded-xl overflow-x-auto overflow-y-auto max-h-[450px]">
         <table className="w-full text-left  text-gray-500 dark:text-gray-400">
           <thead>
-            <tr className="">
-              <th scope="col" className="px-6 py-6">
-                Photo
-              </th>
-              <th scope="col" className="px-6 py-6">
+            <tr className="bg-lightPurple">
+              <th scope="col" className="px-5 py-6">
                 Fullname
               </th>
-              <th scope="col" className="px-6 py-6">
-                Email
+              <th scope="col" className="px-5 py-6">
+                Machine
               </th>
-              <th scope="col" className=" py-6">
-                Number phone
+              <th scope="col" className="px-5 py-6">
+                Reference
+              </th>
+              <th scope="col" className="px-5 py-6">
+                Task
               </th>
             </tr>
           </thead>
           <tbody>
-            {props.users.map((item, index) => (
+            {props.Tasks.map((item, index) => (
               <tr
                 key={index}
                 className="bg-white  border-b-[1px] border-lightPurple  my-1 border-dashed dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
               >
                 <th
                   scope="row"
-                  className="px-6 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                  className="px-5 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white"
                 >
-                  <img
-                    className="w-12 rounded-full"
-                    src={`/assets/${item.img}`}
-                  />
+                  {item.fullname}
                 </th>
-                <td className="px-6 py-2">{item.fullname}</td>
-                <td className="px-6 py-2">{item.email}</td>
-                <td className="px-6 py-2">+216{item.number}</td>
+                <td className="px-5 py-2">{item.machine}</td>
+                <td className="px-5 py-2">{item.reference}</td>
+                <td className="px-5 py-2">{item.task}</td>
               </tr>
             ))}
           </tbody>
