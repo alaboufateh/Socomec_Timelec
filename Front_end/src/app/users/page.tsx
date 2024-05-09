@@ -2,6 +2,7 @@ import CardBlue from "@/shared/CardBlue/CardBlue";
 import CardProfile from "@/shared/CardProfile/CardProfile";
 import Maintenance from "@/shared/Maintenance/Maintenance";
 import Navbar from "@/shared/Navbar/Navbar";
+import UsersList from "@/shared/UsersList/UsersList";
 import React from "react";
 
 function page() {
@@ -20,6 +21,7 @@ function page() {
       </div>
       <div className="basis-2/5 ">
         <CardProfile data={profile} />
+        <UsersList />
       </div>
     </div>
   );
