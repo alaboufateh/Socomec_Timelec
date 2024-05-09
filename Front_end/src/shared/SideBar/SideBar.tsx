@@ -3,16 +3,16 @@ import "./SideBar.scss";
 import Swal from "sweetalert2";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
+
 import {
   faHouse,
   faUser,
   faList,
   faToolbox,
-  faGear,
   faRightToBracket,
+  faScrewdriverWrench,
 } from "@fortawesome/free-solid-svg-icons";
-
-import { useState } from "react";
 
 function SlideBar() {
   const icons = [
@@ -20,7 +20,7 @@ function SlideBar() {
     { title: faUser, path: "/profile" },
     { title: faList, path: "/users" },
     { title: faToolbox, path: "/materials" },
-    { title: faGear, path: "/maintenance" },
+    { title: faScrewdriverWrench, path: "/maintenance" },
   ];
   const initialArray = Array(icons.length).fill(false);
   initialArray[0] = true;
