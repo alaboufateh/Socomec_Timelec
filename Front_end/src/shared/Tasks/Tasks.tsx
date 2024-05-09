@@ -1,8 +1,8 @@
-"use client";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserPlus } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
 
-function UsersList(props: {
+function Tasks(props: {
   users: { email: string; number: string; fullname: string; img: string }[];
 }) {
   return (
@@ -69,4 +69,4 @@ function UsersList(props: {
   );
 }
 
-export default UsersList;
+export default Tasks;

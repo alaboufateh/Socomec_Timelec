@@ -13,15 +13,53 @@ function page() {
     address: "string string string string",
     birth: "string",
   };
+  const users = [
+    {
+      email: "email.test@gmail.com",
+      number: "00000000",
+      fullname: "fullname fullname",
+      img: "fackUser1.jpg",
+    },
+    {
+      email: "email.test@gmail.com",
+      number: "00000000",
+      fullname: "fullname fullname",
+      img: "fackUser2.jpg",
+    },
+    {
+      email: "email.test@gmail.com",
+      number: "00000000",
+      fullname: "fullname fullname",
+      img: "fackUser3.jpg",
+    },
+    {
+      email: "email.test@gmail.com",
+      number: "00000000",
+      fullname: "fullname fullname",
+      img: "fackUser4.jpg",
+    },
+    {
+      email: "email.test@gmail.com",
+      number: "00000000",
+      fullname: "fullname fullname",
+      img: "fackUser5.jpg",
+    },
+    {
+      email: "email.test@gmail.com",
+      number: "00000000",
+      fullname: "fullname fullname",
+      img: "fackUser6.jpg",
+    },
+  ];
   return (
-    <div className="w-defaultwidth mx-auto md:flex  ">
-      <div className="basis-3/5">
+    <div className="w-defaultwidth mx-auto lg:flex  ">
+      <div className="basis-3/5 ">
         <Navbar />
         <CardBlue />
       </div>
       <div className="basis-2/5 ">
         <CardProfile data={profile} />
-        <UsersList />
+        <UsersList users={users} />
       </div>
     </div>
   );
