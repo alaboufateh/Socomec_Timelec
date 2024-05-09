@@ -20,12 +20,7 @@ function Tasks(props: {
             className="bg-jordyBlue  font-bold  p-2 px-4 rounded-lg ms-auto"
             onClick={() => {}}
           >
-            <FontAwesomeIcon
-              style={{ boxSizing: "initial" }}
-              className="pe-2"
-              icon={faUserPlus}
-            />
-            Add user
+            Select user
           </button>
         </div>
       </div>

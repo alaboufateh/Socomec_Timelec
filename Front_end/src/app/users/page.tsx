@@ -19,7 +19,7 @@ function page() {
       machine: "machine name",
       reference: "reference xxx",
       fullname: "fullname fullname",
-      task: "task task task task task task task task task ",
+      task: "task task task task task task task task task",
     },
     {
       machine: "machine name",
@@ -104,37 +104,37 @@ function page() {
     {
       email: "email.test@gmail.com",
       number: "00000000",
-      fullname: "fullname fullname",
+      fullname: "fullname user1",
       img: "fackUser1.jpg",
     },
     {
       email: "email.test@gmail.com",
       number: "00000000",
-      fullname: "fullname fullname",
+      fullname: "fullname user2",
       img: "fackUser2.jpg",
     },
     {
       email: "email.test@gmail.com",
       number: "00000000",
-      fullname: "fullname fullname",
+      fullname: "fullname user3",
       img: "fackUser3.jpg",
     },
     {
       email: "email.test@gmail.com",
       number: "00000000",
-      fullname: "fullname fullname",
+      fullname: "fullname user4",
       img: "fackUser4.jpg",
     },
     {
       email: "email.test@gmail.com",
       number: "00000000",
-      fullname: "fullname fullname",
+      fullname: "fullname user5",
       img: "fackUser5.jpg",
     },
     {
       email: "email.test@gmail.com",
       number: "00000000",
-      fullname: "fullname fullname",
+      fullname: "fullname user6",
       img: "fackUser6.jpg",
     },
   ];
