@@ -4,11 +4,11 @@ import CardProfile from "@/shared/CardProfile/CardProfile";
 import Navbar from "@/shared/Navbar/Navbar";
 function page() {
   const profile = {
-    img: "/assets/fackUser.jpg",
-    name: "string string string ",
-    job: "string string ",
-    address: "string string string string",
-    birth: "string",
+    img: "/assets/ALATIME.png",
+    name: "Boufateh Ala ",
+    job: "Dépannage Eléctronique ",
+    address: "BOUFATEH.ala@socomec.com",
+    birth: "21/01/1998",
   };
   return (
     <div className="w-defaultwidth mx-auto md:flex  ">

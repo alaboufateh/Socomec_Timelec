@@ -58,21 +58,21 @@ function CardProfile(props: {
       <div className="lg:flex xl:py-3 pb-5">
         <div className="basis-1/3 flex">
           <div className="lg:m-auto lg:ps-0 ps-4">
-            <div className="text-gray-500">gg</div>
+            <div className="text-gray-500">JJ</div>
             <div>{props.data?.birth}</div>
           </div>
         </div>
         <hr className="border-[1px] border-lightPurple lg:h-10 lg:w-0 w-defaultwidth m-auto my-1" />
         <div className="basis-1/3 flex">
           <div className="lg:m-auto lg:ps-0 ps-4">
-            <div className="text-gray-500">rrr</div>
+            <div className="text-gray-500">MM</div>
             <div>{props.data?.birth}</div>
           </div>
         </div>
         <hr className="border-[1px] border-lightPurple lg:h-10 lg:w-0 w-defaultwidth m-auto my-1" />{" "}
         <div className="basis-1/3 flex ">
           <div className="lg:m-auto lg:ps-0 ps-4">
-            <div className="text-gray-500">eee</div>
+            <div className="text-gray-500">YY</div>
             <div>{props.data?.birth}</div>
           </div>
         </div>
