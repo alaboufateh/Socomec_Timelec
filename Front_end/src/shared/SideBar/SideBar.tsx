@@ -8,7 +8,6 @@ import { useState } from "react";
 import {
   faHouse,
   faUser,
-  faList,
   faToolbox,
   faRightToBracket,
   faScrewdriverWrench,
@@ -18,7 +17,6 @@ function SlideBar() {
   const icons = [
     { title: faHouse, path: "/" },
     { title: faUser, path: "/profile" },
-    { title: faList, path: "/users" },
     { title: faToolbox, path: "/materials" },
     { title: faScrewdriverWrench, path: "/maintenance" },
   ];
@@ -45,9 +43,8 @@ function SlideBar() {
                 }}
               >
                 <FontAwesomeIcon
-                  className={`md:h-6 h-8  p-2 rounded-lg my-4  text-white ${
-                    hover[index] && "bg-jordyBlue"
-                  } `}
+                  className={`md:h-6 h-8  p-2 rounded-lg my-4  text-white ${hover[index] && "bg-jordyBlue"
+                    } `}
                   style={{ boxSizing: "initial" }}
                   icon={item.title}
                 />

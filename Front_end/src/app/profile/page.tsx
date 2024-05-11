@@ -1,3 +1,5 @@
+import CardProfile from "@/shared/CardProfile/CardProfile";
+
 function page() {
   const profile = {
     img: "/assets/fackUser.jpg",
@@ -8,7 +10,13 @@ function page() {
   };
   return (
     <div className="w-defaultwidth mx-auto md:flex  ">
-      <div></div>
+      <div className="basis-3/5">
+        card edit
+      </div>
+      <div className="basis-2/5 ">
+        <CardProfile data={profile} />
+
+      </div>
     </div>
   );
 }

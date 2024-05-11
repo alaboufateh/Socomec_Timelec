@@ -9,10 +9,10 @@ function Materials() {
       <div className=" flex">
         <button
           className="bg-lightPurple text-blue font-bold hover:text-white hover:bg-blue p-2 px-4 rounded-lg ms-auto"
-          onClick={() => {}}
+          onClick={() => { }}
         >
           <FontAwesomeIcon className="pe-2" icon={faPlus} />
-          Ajouter une machine
+          Ajouter une produit
         </button>
       </div>
     </div>
