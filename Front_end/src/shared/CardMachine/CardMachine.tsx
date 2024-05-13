@@ -21,7 +21,7 @@ function CardMachine() {
           <div className="flex pb-5">
             <p className="font-bold text-blue">{item?.name}</p>
             <Link
-              href={"/materials"}
+              href={"/maintenance"}
               className="ms-auto bg-lightPurple text-blue  hover:text-white hover:bg-blue p-1 px-2 rounded-lg   flex h-fit"
             >
               Consulter

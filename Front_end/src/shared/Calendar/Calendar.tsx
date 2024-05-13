@@ -56,7 +56,7 @@ function Calendar() {
           </div>
         ))}
       </div>
-      <div className="bg-white p-3 rounded-b-xl  overflow-y-auto max-h-[300px] ">
+      <div className="bg-white p-3 rounded-b-xl  overflow-y-auto max-h-[350px] ">
         {taskCompleted.map((item, index) => (
           <div key={index}>
             <hr
