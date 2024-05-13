@@ -1,3 +1,4 @@
+import Calendar from "@/shared/Calendar/Calendar";
 import CardBlue from "@/shared/CardBlue/CardBlue";
 import ListMaintenance from "@/shared/ListMaintenance/ListMaintenance";
 import Maintenance from "@/shared/Maintenance/Maintenance";
@@ -13,7 +14,7 @@ function page() {
         <Maintenance />
       </div>
       <div className="basis-2/5 ">
-        <ListMaintenance />
+        <Calendar />
       </div>
     </div>
   );

@@ -19,7 +19,7 @@ function page() {
         <CardMachine />
       </div>
       <div className="basis-2/5 ">
-        <CardProfile data={profile} />
+        <CardProfile data={profile} icon={true} />
         <Calendar />
       </div>
     </div>

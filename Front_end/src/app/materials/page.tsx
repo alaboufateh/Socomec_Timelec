@@ -9,9 +9,10 @@ function materials() {
       <div className="basis-3/5">
         <Navbar />
         <CardBlue />
-        <Materials />
+        carousel products
+
       </div>
-      <div className="basis-2/5 "></div>
+      <div className="basis-2/5 "> caracteristique product</div>
     </div>
   );
 }
