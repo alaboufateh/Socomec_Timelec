@@ -1,5 +1,5 @@
 import CardBlue from "@/shared/CardBlue/CardBlue";
-import Materials from "@/shared/Materials/Materials";
+import Carousel from "@/shared/Carousel/Carousel";
 import Navbar from "@/shared/Navbar/Navbar";
 import React from "react";
 
@@ -9,8 +9,7 @@ function materials() {
       <div className="basis-3/5">
         <Navbar />
         <CardBlue />
-        carousel products
-
+        <Carousel />
       </div>
       <div className="basis-2/5 "> caracteristique product</div>
     </div>
