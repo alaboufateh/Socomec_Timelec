@@ -7,10 +7,12 @@ function Maintenance() {
   return (
     <div className="bg-white rounded-xl p-4 w-defaultwidth2 mx-auto">
       <div className="flex">
-        <div className="basis-1/2 ">
-          <img src="" />
+        <div className="basis-1/2  ">
+          <div className="text-blue py-1"> Bel :</div>
+          <img className="w-40 m-auto" src="/assets/machine3.png" />
         </div>
         <div className="basis-1/2">
+          <div className="text-blue py-1"> Télécharger une photo :</div>
           <input
             className=" w-defaultwidth2 border-2 border-lightPurple p-2 my-1 rounded-lg"
             type="file"
