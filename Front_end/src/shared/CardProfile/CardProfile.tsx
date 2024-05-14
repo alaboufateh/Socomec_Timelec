@@ -12,23 +12,23 @@ function CardProfile(props: {
     address?: string;
     birth?: string;
   };
-  icon?: boolean
+  icon?: boolean;
 }) {
-  const { icon = false } = props
+  const { icon = false } = props;
   return (
     <div className="w-defaultwidth2 m-auto bg-white rounded-xl">
       <div className="bg-blue rounded-xl text-white p-3 py-4 flex">
-        <div className="basis-1/2">
-          My profile
-        </div>
+        <div className="basis-1/2">My profile</div>
         <div className="basis-1/2 flex">
-          {icon && <Link href="/profile" className=" ms-auto "><FontAwesomeIcon
-
-            style={{ boxSizing: "initial" }}
-            icon={faPenToSquare}
-            className="md:h-6 h-4 "
-          /></Link>}
-
+          {icon && (
+            <Link href="/profile" className=" ms-auto ">
+              <FontAwesomeIcon
+                style={{ boxSizing: "initial" }}
+                icon={faPenToSquare}
+                className="md:h-6 h-4 "
+              />
+            </Link>
+          )}
         </div>
       </div>
       <div className="xl:flex w-full  py-4">

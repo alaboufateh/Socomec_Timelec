@@ -36,7 +36,7 @@ export default function CardBlue() {
       </div>
       <div className="flex basis-1/3 ">
         <div className="bg-white rounded-xl ms-auto m-4">
-          <img className="w-full p-4" src="./assets/logoTimelec.png" />
+          <img alt="" className="w-full p-4" src="./assets/logoTimelec.png" />
         </div>
       </div>
     </div>

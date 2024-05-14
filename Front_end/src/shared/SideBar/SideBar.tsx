@@ -27,7 +27,7 @@ function SlideBar() {
     <div className="w-defaultwidth m-auto py-1 sticky  top-0 sideBar">
       <div className="bg-blue  h-[90vh]  m-auto rounded-xl  py-10 grid ">
         <div className="  ">
-          <img src="./assets/logoWhite.png" className="w-[80%] m-auto" />
+          <img alt="" src="./assets/logoWhite.png" className="w-[80%] m-auto" />
         </div>
         <div>
           {icons.map((item, index) => (
@@ -43,8 +43,9 @@ function SlideBar() {
                 }}
               >
                 <FontAwesomeIcon
-                  className={`md:h-6 h-8  p-2 rounded-lg my-4  text-white ${hover[index] && "bg-jordyBlue"
-                    } `}
+                  className={`md:h-6 h-8  p-2 rounded-lg my-4  text-white ${
+                    hover[index] && "bg-jordyBlue"
+                  } `}
                   style={{ boxSizing: "initial" }}
                   icon={item.title}
                 />

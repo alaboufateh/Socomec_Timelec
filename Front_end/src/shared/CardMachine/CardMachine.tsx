@@ -29,7 +29,11 @@ function CardMachine() {
           </div>
 
           <div className="flex w-full">
-            <img className="m-auto " src={`./assets/machine${index + 1}.png`} />
+            <img
+              alt=""
+              className="m-auto "
+              src={`./assets/machine${index + 1}.png`}
+            />
           </div>
         </div>
       ))}

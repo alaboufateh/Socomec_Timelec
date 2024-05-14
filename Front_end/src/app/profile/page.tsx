@@ -1,4 +1,9 @@
+"use client";
+import CardBlue from "@/shared/CardBlue/CardBlue";
 import CardProfile from "@/shared/CardProfile/CardProfile";
+import Navbar from "@/shared/Navbar/Navbar";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function page() {
   const profile = {
@@ -11,11 +16,12 @@ function page() {
   return (
     <div className="w-defaultwidth mx-auto md:flex  ">
       <div className="basis-3/5">
-        card edit
+        <Navbar />
+        <CardBlue />
+        card edit profile
       </div>
       <div className="basis-2/5 ">
         <CardProfile data={profile} />
-
       </div>
     </div>
   );

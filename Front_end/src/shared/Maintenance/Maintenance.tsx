@@ -8,7 +8,7 @@ function Maintenance() {
       <div className="flex">
         <div className="basis-1/2  ">
           <div className="text-blue py-1"> Bel :</div>
-          <img className="w-52 m-auto" src="/assets/machine1.png" />
+          <img alt="" className="w-52 m-auto" src="/assets/machine1.png" />
         </div>
 
         <div className="basis-1/2">
