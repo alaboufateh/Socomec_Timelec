@@ -45,7 +45,7 @@ function page() {
               />
             </div>
             <div className="basis-1/2">
-              <div className="text-blue">  :</div>
+              <div className="text-blue"> :</div>
               <input
                 className=" w-defaultwidth2 border-2 border-lightPurple p-2 my-1 rounded-lg"
                 type="date"
@@ -74,10 +74,9 @@ function page() {
           <div className=" flex">
             <button
               className="bg-lightPurple text-blue font-bold hover:text-white hover:bg-blue p-2 px-4 rounded-lg ms-auto"
-              onClick={() => { }}
+              onClick={() => {}}
             >
-              <FontAwesomeIcon className="pe-2" icon={faPlus} />
-              Ajouter une tâche
+              Mettre à jour votre profil
             </button>
           </div>
         </div>
