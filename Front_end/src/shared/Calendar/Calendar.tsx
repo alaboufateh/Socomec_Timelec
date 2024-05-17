@@ -10,7 +10,7 @@ function Calendar() {
   const day = currentDate
     .toLocaleString("en-US", { day: "numeric" })
     .padStart(2, "0");
-  const taskCompleted = [
+  const taskCompleted: any[] = [
     { task: "task one ", time: "10:00 pm" },
     { task: "task two", time: "10:30 pm" },
     { task: "task three", time: "11:00 pm" },
@@ -57,30 +57,42 @@ function Calendar() {
         ))}
       </div>
       <div className="bg-white p-3 rounded-b-xl  overflow-y-auto max-h-[350px] ">
-        {taskCompleted.map((item, index) => (
-          <div key={index}>
-            <hr
-              className={`border-[1px] border-lightPurple w-full  my-1 border-dashed ${
-                index === 0 ? "hidden" : "block"
-              }`}
-            />
-            <div className="lg:flex">
-              <span className="text-gray-500 my-auto 2xl:basis-1/6 basis-2/6">
-                {item?.time}
-              </span>
-              <div className="2xl:basis-5/6 basis-4/6 flex">
-                <FontAwesomeIcon
-                  style={{ boxSizing: "initial" }}
-                  icon={faCaretRight}
-                  className="md:h-4 h-2 xl:basis-[10%] lg:basis-[20%]  my-auto text-blue lg:px-2 pe-1"
+        {taskCompleted.length !== 0 ? (
+          <>
+            {" "}
+            {taskCompleted.map((item, index) => (
+              <div key={index}>
+                <hr
+                  className={`border-[1px] border-lightPurple w-full  my-1 border-dashed ${
+                    index === 0 ? "hidden" : "block"
+                  }`}
                 />
-                <div className="xl:basis-[90%] basis-[80%] lg:m-auto">
-                  {item?.task}
+                <div className="lg:flex">
+                  <span className="text-gray-500 my-auto 2xl:basis-1/6 basis-2/6">
+                    {item?.time}
+                  </span>
+                  <div className="2xl:basis-5/6 basis-4/6 flex">
+                    <FontAwesomeIcon
+                      style={{ boxSizing: "initial" }}
+                      icon={faCaretRight}
+                      className="md:h-4 h-2 xl:basis-[10%] lg:basis-[20%]  my-auto text-blue lg:px-2 pe-1"
+                    />
+                    <div className="xl:basis-[90%] basis-[80%] lg:m-auto">
+                      {item?.task}
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
+            ))}
+          </>
+        ) : (
+          <div className="place-items-center grid">
+            <img src="/assets/noTask.png" className="xl:w-48 w-40" />
+            <p className="text-center text-jordyBlue font-bold">
+              No Tasks Found
+            </p>
           </div>
-        ))}
+        )}
       </div>
     </div>
   );
