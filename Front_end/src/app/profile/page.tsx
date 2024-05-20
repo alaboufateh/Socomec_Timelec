@@ -9,10 +9,10 @@ function page() {
 
   const profile = {
     img: profileImg,
-    name: "string string string ",
-    job: "string string ",
-    address: "string string string string",
-    birth: "string",
+    name: "full name",
+    job: "job",
+    address: "address",
+    birth: "",
   };
   const handleImageChange = (event: any) => {
     const file = event.target.files[0];
