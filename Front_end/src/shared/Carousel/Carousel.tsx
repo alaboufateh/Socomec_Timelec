@@ -1,4 +1,6 @@
 "use client";
+import { faCaretLeft, faCaretRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState, useEffect } from "react";
 
 const slides = [
@@ -35,7 +37,7 @@ const Carousel = () => {
         {slides.concat(slides.slice(0, 2)).map((slide, index) => (
           <div
             key={index}
-            className="2xl:w-1/4 lg:w-1/3 w-1/2 h-full flex-shrink-0 flex items-center justify-center rounded-xl text-white p-4 font-bold lg:text-lg text-sm"
+            className="2xl:w-1/4 cursor-pointer  lg:w-1/3 w-1/2 h-full flex-shrink-0 flex items-center justify-center rounded-xl text-white p-4 font-bold lg:text-lg text-sm"
           >
             <div className="bg-white p-4 rounded-xl">
               <p className="text-blue">{slide.title}</p>
@@ -45,16 +47,16 @@ const Carousel = () => {
         ))}
       </div>
       <div
-        className="absolute top-1/2 left-4 transform -translate-y-1/2 px-4 py-2 bg-lightPurple font-bold text-blue rounded-md"
+        className="absolute top-1/2 left-4 transform -translate-y-1/2 px-4 py-2 text-white font-bold bg-jordyBlue rounded-md cursor-pointer"
         onClick={prevSlide}
       >
-        Prev
+        <FontAwesomeIcon icon={faCaretLeft} />
       </div>
       <div
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 px-4 py-2 bg-lightPurple font-bold text-blue rounded-md"
+        className="absolute top-1/2 right-4 transform -translate-y-1/2 px-4 py-2 text-white font-bold bg-jordyBlue rounded-md cursor-pointer"
         onClick={nextSlide}
       >
-        Next
+        <FontAwesomeIcon icon={faCaretRight} />
       </div>
     </div>
   );
