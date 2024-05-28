@@ -8,9 +8,9 @@ const cors = require('cors');
 // Configuration de la base de données MySQL
 const connection = mysql.createConnection({
   host: 'localhost',
-  user: 'votre_utilisateur_mysql',
-  password: 'votre_mot_de_passe_mysql',
-  database: 'nom_de_votre_base_de_données'
+  user: 'root',
+  password: '',
+  database: 'users'
 });
 
 // Connexion à la base de données
