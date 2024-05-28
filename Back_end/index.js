@@ -1,9 +1,9 @@
 const mysql = require('mysql');
 const express = require('express');
 const bodyParser = require('body-parser');
-
 const app = express();
 const port = 3000;
+const cors = require('cors'); 
 
 // Configuration de la base de données MySQL
 const connection = mysql.createConnection({
