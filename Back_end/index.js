@@ -21,7 +21,9 @@ connection.connect((err) => {
 
 // Middleware pour parser les requêtes JSON
 app.use(bodyParser.json());
+// Utilisation du middleware cors pour gérer les requêtes cross-origin
 
+app.use(cors());
 // Création d'un nouvel enregistrement
 app.post('/create', (req, res) => {
   const { nom, email } = req.body;
